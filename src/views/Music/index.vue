@@ -216,7 +216,6 @@ export default {
       padding-right: 1rem;
       font-size: 0.7rem;
       font-weight: lighter;
-      overflow: scroll;
       list-style: none;
       &::-webkit-scrollbar{
         display:none;

@@ -1,9 +1,5 @@
 <template>
   <div class="sidebar">
-    <el-radio-group v-model="isCollapse" style="margin-bottom: 15px;">
-      <el-radio-button :label="false">展开</el-radio-button>
-      <el-radio-button :label="true">收起</el-radio-button>
-    </el-radio-group>
     <el-menu
       router
       default-active="/login"
@@ -11,12 +7,15 @@
       @open="handleOpen"
       @close="handleClose"
       :collapse="isCollapse"
-      style="height: 100vh;"
     >
-      <el-submenu index="/home">
+      <el-menu-item index="/home">
+        <i class="el-icon-s-home"></i>
+        <span slot="title">主页</span>
+      </el-menu-item>
+      <el-submenu index="/">
         <template slot="title">
-          <i class="el-icon-s-home"></i>
-          <span slot="title">主页</span>
+          <i class="el-icon-menu"></i>
+          <span slot="title">DEMOS</span>
         </template>
         <el-menu-item-group>
           <el-menu-item index="/home">天气查询</el-menu-item>
@@ -24,19 +23,16 @@
           <el-menu-item index="/counter">计数器</el-menu-item>
           <el-menu-item index="/gragh">图表统计</el-menu-item>
           <el-menu-item index="/table">表格筛选</el-menu-item>
+          <el-menu-item index="/test">测试用例</el-menu-item>
         </el-menu-item-group>
       </el-submenu>
-      <el-menu-item index="/test">
-        <i class="el-icon-menu"></i>
-        <span slot="title">测试用例</span>
+      <el-menu-item index="/music">
+        <i class="el-icon-headset"></i>
+        <span slot="title">音乐播放</span>
       </el-menu-item>
       <el-menu-item index="/message">
         <i class="el-icon-s-comment"></i>
         <span slot="title">消息管理</span>
-      </el-menu-item>
-      <el-menu-item index="/music">
-        <i class="el-icon-headset"></i>
-        <span slot="title">音乐播放</span>
       </el-menu-item>
       <el-submenu index="/piture">
         <template slot="title">
@@ -54,7 +50,7 @@
           <span slot="title">配置管理</span>
         </template>
         <el-menu-item-group>
-          <el-menu-item index="/config">大小写转换</el-menu-item>
+          <el-menu-item index="/config">选项1</el-menu-item>
           <el-menu-item index="5-2">选项2</el-menu-item>
         </el-menu-item-group>
       </el-submenu>
@@ -64,8 +60,8 @@
           <span slot="title">外部链接</span>
         </template>
         <el-menu-item-group>
-          <el-menu-item index="6-1">选项1</el-menu-item>
-          <el-menu-item index="6-2">选项2</el-menu-item>
+          <el-menu-item index="https://github.com/Lynn-zuo/">github</el-menu-item>
+          <el-menu-item index="https://www.cnblogs.com/lynn-z/">随笔</el-menu-item>
         </el-menu-item-group>
       </el-submenu>
     </el-menu>
@@ -76,7 +72,7 @@
 export default {
   data () {
     return {
-      isCollapse: true
+      isCollapse: false
     }
   },
   methods: {
@@ -97,16 +93,15 @@ i.el-icon-headset{
 }
 .sidebar {
   display: inline-block;
-  overflow-y: scroll;
-  .el-radio-group {
-    width:75px;
-  }
+  overflow-x: hidden;
+  overflow-y: auto;
+  width:10rem;
   .el-menu {
-    height: 100vh;
+    padding-right: 1rem;
+    width:10rem;
+    &::-webkit-scrollbar{
+        display:none;
+    }
   }
-}
-.el-menu-vertical-demo:not(.el-menu--collapse) {
-  width: 199px;
-  min-height: 500px;
 }
 </style>

@@ -12,7 +12,7 @@
         <el-main>
           <AppMain />
         </el-main>
-        <el-footer>Footer</el-footer>
+        <el-footer></el-footer>
       </el-container>
     </el-container>
   </div>
@@ -39,7 +39,7 @@ export default {
 
 <style lang="scss" scoped>
 .layout {
-  height:100%;
+  height:100vh;
   display: flex;
   overflow:auto;
   .siderbar {
@@ -47,15 +47,10 @@ export default {
     bottom: 0;
   }
 }
-.right {
+el-container.right {
   display: flex;
-  margin-left:-5px; // 内容宽度随侧边栏变化
+  height:100vh;
+  margin-left:0rem; // 内容宽度随侧边栏变化
   justify-content: flex-start;
-}
-.el-main {
-  background-color: lightyellow;
-}
-.el-footer {
-  background-color: lightsteelblue;
 }
 </style>

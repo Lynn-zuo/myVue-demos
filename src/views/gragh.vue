@@ -1,38 +1,14 @@
 <template>
   <div class="table">
     <h1>{{ msg }}</h1>
-    <div id="main-table">
-      <el-table :data="tableData" border style="width: 100%">
-        <el-table-column prop="date" label="日期" width="180"></el-table-column>
-        <el-table-column prop="name" label="姓名" width="180"></el-table-column>
-        <el-table-column prop="address" label="地址"></el-table-column>
-      </el-table>
-      <div id="echart1" style="width:100%; height:300px;"></div>
-    </div>
+    <div id="echart1" style="width:100%; height:300px;"></div>
   </div>
 </template>
 <script>
 export default {
   data () {
     return {
-      msg: '图表',
-      tableData: [{
-        date: '2016-05-02',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1518 弄'
-      }, {
-        date: '2016-05-04',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1517 弄'
-      }, {
-        date: '2016-05-01',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1519 弄'
-      }, {
-        date: '2016-05-03',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1516 弄'
-      }]
+      msg: 'Echarts入门'
     }
   },
   mounted () { // 渲染完成后执行

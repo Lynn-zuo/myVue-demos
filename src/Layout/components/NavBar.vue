@@ -22,7 +22,7 @@ export default {
   // 声明接收属性：这个属性就会成为组件对象的属性
   data () {
     return {
-      msg: 'Lynn'
+      msg: 'Lynn的Vue DEMOS'
     }
   },
   methods: {
@@ -61,9 +61,6 @@ export default {
 </script>
 
 <style scoped>
-.navbar {
-  background-color: lightsteelblue;
-}
 .el-dropdown{
   float: right;
 }
