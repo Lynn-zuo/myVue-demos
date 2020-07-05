@@ -77,6 +77,7 @@ export default {
 .weather_wrap {
   text-align:center;
   background:lightsteelblue;
+  padding: top 2rem;
 }
 .weather-container {
   height: 160px;
