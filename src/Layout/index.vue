@@ -41,7 +41,6 @@ export default {
 .layout {
   height:100vh;
   display: flex;
-  overflow:auto;
   .siderbar {
     left: 0;
     bottom: 0;
@@ -52,5 +51,8 @@ el-container.right {
   height:100vh;
   margin-left:0rem; // 内容宽度随侧边栏变化
   justify-content: flex-start;
+  el-main{
+    overflow:hidden;
+  }
 }
 </style>
