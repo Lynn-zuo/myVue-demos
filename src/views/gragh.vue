@@ -1,5 +1,5 @@
 <template>
-  <div class="table">
+  <div class="graph">
     <h1>{{ msg }}</h1>
     <div id="echart1" style="width:100%; height:300px;"></div>
   </div>
@@ -43,4 +43,8 @@ export default {
   }
 }
 </script>
-<style></style>
+<style lang="scss" scoped>
+.graph{
+  background: lightyellow;
+}
+</style>

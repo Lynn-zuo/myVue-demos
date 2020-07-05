@@ -1,11 +1,13 @@
 
 <template>
-  <div class="application">
-    <p>click {{count}} times, count is {{evenOrodd}}.</p>
-    <button @click="increment">+</button>
-    <button @click="decrement">-</button>
-    <button @click="incrementIfOdd">increment if odd</button>
-    <button @click="incrementAsync">increment async</button>
+  <div class="wrap">
+    <div class="application">
+      <p>click {{count}} times, count is {{evenOrodd}}.</p>
+      <button @click="increment">+</button>
+      <button @click="decrement">-</button>
+      <button @click="incrementIfOdd">increment if odd</button>
+      <button @click="incrementAsync">increment async</button>
+    </div>
   </div>
 </template>
 
@@ -41,4 +43,13 @@ export default {
 }
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+<style scoped>
+.application{
+  background: lightyellow;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-top:3rem;
+  padding-bottom: 4rem;;
+}
+</style>

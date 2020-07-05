@@ -18,7 +18,7 @@
           <span slot="title">DEMOS</span>
         </template>
         <el-menu-item-group>
-          <el-menu-item index="/home">天气查询</el-menu-item>
+          <el-menu-item index="/Weather">天气查询</el-menu-item>
           <el-menu-item index="/Todos">待做列表</el-menu-item>
           <el-menu-item index="/counter">计数器</el-menu-item>
           <el-menu-item index="/gragh">图表统计</el-menu-item>

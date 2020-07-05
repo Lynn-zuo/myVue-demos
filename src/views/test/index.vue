@@ -15,6 +15,11 @@ export default {}
 </script>
 
 <style scoped>
+.test {
+  background: lightyellow;
+  padding-top:3rem;
+  padding-bottom: 4rem;;
+}
 .test .testlink {
   margin:9px 9px;
   text-decoration: none;

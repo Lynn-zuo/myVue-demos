@@ -1,5 +1,5 @@
 <template>
-  <div class="table2">
+  <div class="table">
     <h1>{{ msg }}</h1>
     <el-table ref="filterTable" :data="tableData" style="width: 100%">
       <el-table-column
@@ -125,3 +125,17 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.table {
+  background: lightyellow;
+  width:100%;
+  margin:auto;
+  padding-top:1rem;
+  padding-bottom:1rem;
+  el-table {
+    background: transparent;
+    width:90%;
+  }
+}
+</style>

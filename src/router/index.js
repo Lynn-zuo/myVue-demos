@@ -5,6 +5,7 @@ import Layout from '@/Layout'
 import registered from '@/views/Registered'
 import login from '@/views/Login'
 import todos from '@/views/Todos'
+import weather from '@/views/Weather'
 import counter from '@/views/counter'
 import test from '@/views/test'
 import news from '@/views/test/components/News'
@@ -32,6 +33,10 @@ export default new Router({
         {
           path: '/home',
           component: home
+        },
+        {
+          path: '/Weather',
+          component: weather
         },
         {
           path: '/Todos',
