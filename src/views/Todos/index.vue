@@ -70,12 +70,12 @@ export default {
 <style scoped>
 .todo-container {
   font-size: 13px;
-  width: 600px;
+  width: 40rem;
   margin: auto;
 }
 .todo-container .todo-wrap {
   background-color:blanchedalmond;
-  line-height: 40px;
+  line-height: 2rem;
   border: 1px solid #ddd;
   border-radius: 2px;
   padding: 0px;

@@ -75,7 +75,7 @@ export default {
 
 <style lang="scss" scoped>
 .weather_wrap {
-  width:90%;
+  width:55rem;
   margin:auto;
   text-align:center;
   background: lightyellow;
@@ -83,7 +83,7 @@ export default {
 }
 .weather-container {
   height: 160px;
-  width: 100%;
+  width: 55rem;
   text-align: center;
   color: #2c3e50;
   margin-top: 0 20px;

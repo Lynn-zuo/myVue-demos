@@ -33,8 +33,8 @@ export default {
 
 <style scoped>
 .todo-l ul.todo-main {
-  width:430px;
-  margin-left: 18px;
+  width:27rem;
+  margin-left: 1rem;
   border: 1px solid #ddd;
   border-radius: 2px;
   padding: 0px;

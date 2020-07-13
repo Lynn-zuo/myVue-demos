@@ -1,5 +1,9 @@
 <template>
   <div class="sidebar">
+    <el-radio-group v-model="isCollapse" style="margin-bottom: 1rem">
+      <el-radio-button :label="false">展开</el-radio-button>
+      <el-radio-button :label="true">收起</el-radio-button>
+    </el-radio-group>
     <el-menu
       router
       default-active="/login"
@@ -72,7 +76,7 @@
 export default {
   data () {
     return {
-      isCollapse: false
+      isCollapse: true
     }
   },
   methods: {
@@ -101,6 +105,24 @@ i.el-icon-headset{
     width:10rem;
     &::-webkit-scrollbar{
         display:none;
+    }
+  }
+  @media screen and (min-width: 500px) {
+    .siderbar{
+      width:1rem;
+      .el-menu {
+        padding-right: 0.1rem;
+        width:1rem;
+      }
+      el-submenu{
+        width:1rem;
+      }
+      li.el-submenu {
+        width:2rem;
+      }
+      .el-submenu__title{
+        padding-left: 2px;
+      }
     }
   }
 }

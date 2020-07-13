@@ -46,7 +46,7 @@ export default {
 <style scoped>
 .application{
   background: lightyellow;
-  width: 90%;
+  width: 60rem;
   margin: auto;
   text-align: center;
   padding-top:3rem;

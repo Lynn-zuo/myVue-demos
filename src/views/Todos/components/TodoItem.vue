@@ -46,13 +46,13 @@ export default {
 
 <style scoped>
 .todo-i {
-  width: 410px;
-  margin: 10px auto;
+  width: 27rem;
+  margin: 0.6rem auto;
   text-align: center;
 }
 .todo-i li {
   list-style: none;
-  height:36px;
+  height:2rem;
   padding: 0px;
   border-bottom:1px solid #ddd;
 }
@@ -68,7 +68,7 @@ export default {
 }
 li button {
   float:right;
-  margin-top:3px;
+  margin-top:0.1rem;
 }
 li:before {
   content: initial;

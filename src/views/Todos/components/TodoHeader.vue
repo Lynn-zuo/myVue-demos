@@ -40,8 +40,8 @@ export default {
 </script>
 <style scoped>
 .todo-h input {
-  width:420px;
-  height:30px;
+  width:26rem;
+  height:2rem;
   border:1px solid #ddd;
   margin-left:-20px;
   padding-left:9px;

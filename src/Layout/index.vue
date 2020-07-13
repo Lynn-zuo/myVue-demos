@@ -40,6 +40,7 @@ export default {
 <style lang="scss" scoped>
 .layout {
   height:100vh;
+  width:100vw;
   display: flex;
   .siderbar {
     left: 0;
@@ -49,6 +50,7 @@ export default {
 el-container.right {
   display: flex;
   height:100vh;
+  width:100vw;
   margin-left:0rem; // 内容宽度随侧边栏变化
   justify-content: flex-start;
   el-main{

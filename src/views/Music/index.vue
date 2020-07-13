@@ -156,7 +156,7 @@ export default {
 
 <style lang="scss" scoped>
 .play_wrap {
-  width: 80%;
+  width: 50rem;
   margin: 0 auto;
 }
 .head {

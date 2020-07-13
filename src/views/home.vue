@@ -76,19 +76,22 @@ export default {
 <style lang="scss" scoped>
 .weather_wrap {
   text-align:center;
-  background:lightsteelblue;
+  background: lightyellow;
   padding-top: 2rem;
+  width:50rem;
+  margin:auto;
+  text-align:center;
 }
 .weather-container {
   height: 160px;
-  width: 100%;
+  width: 50rem;
   text-align: center;
   color: #2c3e50;
   margin-top: 0 20px;
   padding: 0;
   margin: 10px;
   .el-input {
-    width: 60%;
+    width: 20rem;
   }
   .hotkey {
     margin-top: 0.5rem;
